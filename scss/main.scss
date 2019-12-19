@@ -1,5 +1,9 @@
 // Custom.scss
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
 
+$primary_theme_color: #61B6E5;
+$secondary_theme_color: #FF6780;
+$font-family-base: 'Roboto', sans-serif;
 
 // Required
 @import "../node_modules/bootstrap/scss/functions";
@@ -13,5 +17,8 @@
 @import "../node_modules/bootstrap/scss/nav";
 @import "../node_modules/bootstrap/scss/navbar";
 @import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/forms";
+
 
 @import "custom";
