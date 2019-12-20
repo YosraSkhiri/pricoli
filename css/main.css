@@ -4385,11 +4385,10 @@ textarea.form-control {
   background-color: transparent;
   color: #61B6E5;
   font-weight: 700; }
-
-.btn-primary:hover {
-  border: solid 2px transparent;
-  background-color: #61B6E5;
-  box-shadow: 0px 4px 6px #61B6E5; }
+  .btn-primary:hover {
+    border: solid 2px transparent;
+    background-color: #61B6E5;
+    box-shadow: 0px 4px 6px #61B6E5; }
 
 .btn-nav:hover {
   background-color: #FF6780;
@@ -4413,14 +4412,13 @@ textarea.form-control {
   background-position: center;
   background-size: cover;
   position: relative; }
-
-.hero-section::before {
-  content: '';
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(255, 255, 255, 0.25);
-  position: absolute;
-  z-index: 2; }
+  .hero-section::before {
+    content: '';
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.25);
+    position: absolute;
+    z-index: 2; }
 
 .hero-content {
   position: relative;
@@ -4428,15 +4426,15 @@ textarea.form-control {
   .hero-content h1 {
     color: white;
     font-size: 5.6rem; }
-  .hero-content h1::after {
-    content: '';
-    position: relative;
-    z-index: -1;
-    top: -9rem;
-    display: block;
-    width: 23rem;
-    height: 1.5rem;
-    background-color: #61B6E5; }
+    .hero-content h1::after {
+      content: '';
+      position: relative;
+      z-index: -1;
+      top: -9rem;
+      display: block;
+      width: 23rem;
+      height: 1.5rem;
+      background-color: #61B6E5; }
   .hero-content p {
     color: white;
     margin-top: -2.5rem;
