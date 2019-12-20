@@ -1,5 +1,5 @@
-.navbar-nav .nav-item:not(last-child){
-    margin-right: 6rem;
+.navbar-nav .nav-item:not(:last-child){
+    margin-right: 2.5rem;
 }
 
 .btn{
@@ -17,6 +17,12 @@
     border: solid 2px transparent;
     background-color: $primary_theme_color;
     box-shadow: 0px 4px 6px $primary_theme_color;
+}
+
+.btn-nav:hover{
+    background-color: $secondary_theme_color;
+    box-shadow: 0px 4px 6px $secondary_theme_color;
+    color: white;
 }
 
 .btn-search{
@@ -66,7 +72,12 @@
     background-color: rgba(255, 255, 255, .25);
     position: absolute;
     z-index: 2;
-}   
+} 
+
+.hero-form{
+    
+   
+}
 
 
 

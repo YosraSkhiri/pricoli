@@ -759,7 +759,7 @@ input[type="button"].btn-block {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 1rem; }
+  padding: 0.95rem 1rem; }
   .navbar .container,
   .navbar .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl {
     display: flex;
@@ -4373,8 +4373,8 @@ textarea.form-control {
     .form-inline .custom-control-label {
       margin-bottom: 0; } }
 
-.navbar-nav .nav-item:not(last-child) {
-  margin-right: 6rem; }
+.navbar-nav .nav-item:not(:last-child) {
+  margin-right: 2.5rem; }
 
 .btn {
   padding: .5rem 2rem;
@@ -4389,6 +4389,11 @@ textarea.form-control {
   border: solid 2px transparent;
   background-color: #61B6E5;
   box-shadow: 0px 4px 6px #61B6E5; }
+
+.btn-nav:hover {
+  background-color: #FF6780;
+  box-shadow: 0px 4px 6px #FF6780;
+  color: white; }
 
 .btn-search {
   border: solid 2px transparent;
