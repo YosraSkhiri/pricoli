@@ -1,3 +1,4 @@
+//this is made to space the nav links exapt the last link
 .navbar-nav .nav-item:not(:last-child){
     margin-right: 2.5rem;
 }
@@ -11,6 +12,7 @@
     border: solid 2px $primary_theme_color;
     background-color: transparent;
     color: $primary_theme_color;
+    font-weight: 700;
 }
 
 .btn-primary:hover{
@@ -46,23 +48,6 @@
     background-position: center;
     background-size: cover;
     position: relative;
-
-    .hero-content{
-        position: relative;
-        z-index: 3;
-
-        h1{
-            color: white;
-
-            span{
-                display: block;
-            }
-        }
-
-        p{
-            color: white;
-        }
-    }
 }
 
 .hero-section::before{
@@ -73,6 +58,37 @@
     position: absolute;
     z-index: 2;
 } 
+
+
+.hero-content{
+    position: relative;
+    z-index: 5;
+
+    h1{
+        color: white;
+        font-size: 5.6rem;
+    }
+
+    h1::after{
+        content: '';
+        position: relative;
+        z-index: -1;
+        top: -9rem;
+        display: block;
+        width: 23rem;
+        height: 1.5rem;
+        background-color: $primary_theme_color; 
+    }
+
+    p{
+        color: white;
+        margin-top: -2.5rem;
+        font-weight: lighter;
+        letter-spacing: 1px;
+        font-size: 1.3rem;
+    }
+}
+
 
 .hero-form{
     

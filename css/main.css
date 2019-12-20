@@ -4383,7 +4383,8 @@ textarea.form-control {
 .btn-primary {
   border: solid 2px #61B6E5;
   background-color: transparent;
-  color: #61B6E5; }
+  color: #61B6E5;
+  font-weight: 700; }
 
 .btn-primary:hover {
   border: solid 2px transparent;
@@ -4412,15 +4413,6 @@ textarea.form-control {
   background-position: center;
   background-size: cover;
   position: relative; }
-  .hero-section .hero-content {
-    position: relative;
-    z-index: 3; }
-    .hero-section .hero-content h1 {
-      color: white; }
-      .hero-section .hero-content h1 span {
-        display: block; }
-    .hero-section .hero-content p {
-      color: white; }
 
 .hero-section::before {
   content: '';
@@ -4429,5 +4421,27 @@ textarea.form-control {
   background-color: rgba(255, 255, 255, 0.25);
   position: absolute;
   z-index: 2; }
+
+.hero-content {
+  position: relative;
+  z-index: 5; }
+  .hero-content h1 {
+    color: white;
+    font-size: 5.6rem; }
+  .hero-content h1::after {
+    content: '';
+    position: relative;
+    z-index: -1;
+    top: -9rem;
+    display: block;
+    width: 23rem;
+    height: 1.5rem;
+    background-color: #61B6E5; }
+  .hero-content p {
+    color: white;
+    margin-top: -2.5rem;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size: 1.3rem; }
 
 /*# sourceMappingURL=main.css.map */
