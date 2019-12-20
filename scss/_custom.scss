@@ -89,17 +89,20 @@
 
 
 .hero-form{
-    //padding: 2rem 1rem;
+    padding: .7rem 1rem ;
     background: white;
    border-radius: 15px;
+
+   input{
+       margin-bottom: 1rem;
+   }
+
+   label{
+        color: black;
+        display: block;
+   }
    
 }
-
-
-label{
-    color: black;
-}
-
 
 .home-section{
     width: 100%;
