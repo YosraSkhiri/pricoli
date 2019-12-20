@@ -5342,7 +5342,7 @@ textarea.form-control {
 .hero-content {
   position: relative;
   z-index: 5;
-  top: 40%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0 2rem; }
@@ -5368,13 +5368,24 @@ textarea.form-control {
 .hero-form {
   padding: 0.7rem 1rem;
   background: white;
-  border-radius: 15px; }
+  border-radius: 15px;
+  margin-top: 2.5rem;
+  box-shadow: 0px 4px 4px rgba(138, 137, 137, 0.4); }
   .hero-form input {
     margin-bottom: 1rem; }
-
-label {
-  color: black;
-  display: block; }
+  .hero-form label {
+    color: black;
+    display: block; }
+  .hero-form .btn-search {
+    background-color: #61B6E5;
+    border: solid 2px transparent;
+    color: white;
+    font-weight: 700; }
+    .hero-form .btn-search:hover {
+      border: solid 2px #61B6E5;
+      background-color: transparent;
+      box-shadow: 0px 4px 6px #61B6E5;
+      color: #61B6E5; }
 
 .home-section {
   width: 100%;

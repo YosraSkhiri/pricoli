@@ -59,7 +59,7 @@
 .hero-content{
     position: relative;
     z-index: 5;
-    top: 40%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0 2rem;
@@ -91,8 +91,9 @@
 .hero-form{
     padding: .7rem 1rem ;
     background: white;
-   border-radius: 15px;
-
+    border-radius: 15px;
+    margin-top: 2.5rem;
+    box-shadow: 0px 4px 4px rgba(138, 137, 137, .4);
    input{
        margin-bottom: 1rem;
    }
@@ -100,6 +101,20 @@
    label{
         color: black;
         display: block;
+   }
+
+   .btn-search{
+   
+    background-color: $primary_theme_color;
+    border: solid 2px transparent;
+    color: white;
+    font-weight: 700;
+    &:hover{
+        border: solid 2px $primary_theme_color;
+        background-color: transparent;
+        box-shadow: 0px 4px 6px $primary_theme_color;
+        color: $primary_theme_color;
+    }
    }
    
 }
