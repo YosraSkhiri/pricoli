@@ -132,6 +132,19 @@ label{
     img{
         height: 50%;
     }
+    .btn-bg-in{
+        border: solid 2px white;
+        background-color: transparent;
+        color: white;
+        font-weight: 700;
+        padding: .5rem 2rem;
+        font-size: 1.7rem;
+    &:hover{
+        border: solid 2px black;
+        color: black;
+    }
+
+    }
 }
 
 footer{

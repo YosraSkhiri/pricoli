@@ -5392,6 +5392,16 @@ label {
     background: #FF6780; }
   .home-section img {
     height: 50%; }
+  .home-section .btn-bg-in {
+    border: solid 2px white;
+    background-color: transparent;
+    color: white;
+    font-weight: 700;
+    padding: .5rem 2rem;
+    font-size: 1.7rem; }
+    .home-section .btn-bg-in:hover {
+      border: solid 2px black;
+      color: black; }
 
 footer {
   background: #61B6E5; }

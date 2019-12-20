@@ -1,11 +1,5 @@
-// Custom.scss
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
-
-$primary_theme_color: #61B6E5;
-$secondary_theme_color: #FF6780;
-$font-family-base: 'Roboto', sans-serif;
-$navbar-padding-y: .85rem;
-$body-bg: #FCFCFC;
+// Custom scss
+@import "variables";
 
 // Required
 @import "../node_modules/bootstrap/scss/functions";
