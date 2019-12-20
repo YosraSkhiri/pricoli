@@ -5401,7 +5401,8 @@ label {
     font-size: 1.7rem; }
     .home-section .btn-bg-in:hover {
       border: solid 2px black;
-      color: black; }
+      color: black;
+      background: #ff95a6; }
 
 footer {
   background: #61B6E5; }

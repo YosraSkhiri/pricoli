@@ -139,10 +139,11 @@ label{
         font-weight: 700;
         padding: .5rem 2rem;
         font-size: 1.7rem;
-    &:hover{
-        border: solid 2px black;
-        color: black;
-    }
+        &:hover{
+            border: solid 2px black;
+            color: black;
+            background: lighten($secondary_theme_color, 9);
+        }
 
     }
 }
