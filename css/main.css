@@ -5341,7 +5341,11 @@ textarea.form-control {
 
 .hero-content {
   position: relative;
-  z-index: 5; }
+  z-index: 5;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 2rem; }
   .hero-content h1 {
     color: white;
     font-size: 5.6rem; }
@@ -5362,8 +5366,6 @@ textarea.form-control {
     font-size: 1.3rem; }
 
 .hero-form {
-  width: 70%;
-  padding: 2rem 0;
   background: white;
   border-radius: 15px; }
 
@@ -5377,11 +5379,13 @@ label {
   .home-section .part-1 {
     margin-left: 6.5rem;
     margin-top: 5rem; }
-  .home-section p.def span {
+  .home-section p.para-1 span {
     font-size: 2.2rem;
     background: black;
     color: white;
     padding: 0 6px; }
+  .home-section p.para-2 {
+    margin-top: 5rem; }
   .home-section::before {
     content: '';
     position: absolute;
