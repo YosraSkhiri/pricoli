@@ -1,0 +1,53 @@
+//buttons
+.c-btn, .btn-nav{
+    padding: .5rem 2rem;
+    border-radius: 50px;
+    font-weight: 700;
+    border: solid 2px transparent;
+}
+
+.btn-nav:hover{
+    background-color: $secondary_theme_color;
+    box-shadow: 0px 4px 6px $secondary_theme_color;
+    color: white;
+}
+
+.btn-default{  
+    @extend .c-btn;
+    border-color: $primary_theme_color;
+    color: $primary_theme_color;
+    &:hover{
+        border-color: transparent;
+        background-color: $primary_theme_color;
+        box-shadow: 0px 4px 6px $primary_theme_color;
+        color: white;
+    }
+}
+
+$color-theme: (primary: #61B6E5, secondary: #FF6780);
+@each $theme, $color in  $color-theme{
+    .btn-#{$theme}{ 
+        @extend .c-btn;
+        background-color: $color;
+        color: white;
+        &:hover{
+            border-color: $color;
+            background-color: transparent;
+            box-shadow: 0px 4px 6px $color;
+            color: $color;
+        }
+    }   
+}
+
+.btn-bg-intro{
+    @extend .c-btn;
+    border-color: white;
+    color: white;
+    padding: .5rem 2rem;
+    font-size: 1.7rem;
+    &:hover{
+        border-color: black;
+        color: black;
+        background: lighten($secondary_theme_color, 9);
+    }
+}

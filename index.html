@@ -27,10 +27,10 @@
                     <a class="btn btn-nav" href="#">A propos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="btn btn-nav" href="#">Contact</a>
+                    <a class="btn btn-nav" href="#contact">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="btn btn-primary" href="#">Se Connecter</a>
+                    <a class="btn btn-default" href="#">Se Connecter</a>
                 </li>
             </ul>
         </div>
@@ -45,13 +45,13 @@
                     <label class="" for="inlineFormInputName2">Chercher un jardin d'enfant :</label>
                     <input type="text" class="form-control" id="inlineFormInputName2" placeholder="Nom ou Localisation">
               
-                    <button type="submit" class="btn btn-search">chercher</button>
+                    <button type="submit" class="btn btn-primary">chercher</button>
                 </form>
             </div>
         </div>
     </header>
 
-    <section class="home-section d-flex">
+    <section class="home-section d-flex" >
         <div class="part-1">
             <p class="para-1">
                 <br><span>Pricoli vous offre une platforme</span>
@@ -59,12 +59,12 @@
                 <br><span>en Tunisie</span>
             </p>
             <p class="para-2">Inscrivez votre jardin d'enfant ici :</p>
-            <button class="btn btn-bg-in">S'inscrire</button>
+            <button class="btn btn-bg-intro">S'inscrire</button>
         </div>
         <img src="img/cubes.png" alt="Game" class="mt-auto p-2 bd-highlight">
     </section>
 
-    <footer class="d-flex">
+    <footer class="d-flex" id="contact">
         <div>
             <h1>A propos de nous</h1>
             <img src="img/footer_logo.png" alt="Logo">
@@ -75,7 +75,7 @@
             </p>
             <div>
                 <p>Suivez nous ici :</p>
-                <ul>
+                <ul class="d-flex justify-content-around">
                     <li><a href="#"><img src="img/Facebook.svg" alt="Facebook"></a></li>
                     <li><a href="#"><img src="img/Twitter.svg" alt="Twitter"></a></li>
                     <li><a href="#"><img src="img/Instagram.svg" alt="Instagram"></a></li>
@@ -84,6 +84,21 @@
         </div>
         <div>
             <h1>Contacter nous</h1>
+            <form>
+                <div class="form-group">
+                  <label for="nom">Nom et Prenom</label>
+                  <input type="text" class="form-control" id="nom">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Email</label>
+                  <input type="email" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group">
+                  <label for="messege">Messege</label>
+                  <textarea name="messege" id="messege" cols="30" rows="10"></textarea>
+                </div>
+                <button type="submit" class="btn">Envoyer</button>
+              </form>
         </div>
     </footer>
 

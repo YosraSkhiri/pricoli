@@ -3,35 +3,6 @@
     margin-right: 2.5rem;
 }
 
-.btn{
-    padding: .5rem 2rem;
-    border-radius: 50px;
-}
-
-.btn-primary{
-    border: solid 2px $primary_theme_color;
-    background-color: transparent;
-    color: $primary_theme_color;
-    font-weight: 700;
-    &:hover{
-        border: solid 2px transparent;
-        background-color: $primary_theme_color;
-        box-shadow: 0px 4px 6px $primary_theme_color;
-    }
-}
-
-.btn-nav:hover{
-    background-color: $secondary_theme_color;
-    box-shadow: 0px 4px 6px $secondary_theme_color;
-    color: white;
-}
-
-.btn-search{
-    border: solid 2px transparent;
-    background-color: $primary_theme_color;
-    color: white;
-}
-
 .form-control{
     border-radius: 50px;
     border: 1px solid rgb(182, 182, 182);
@@ -94,29 +65,14 @@
     border-radius: 15px;
     margin-top: 2.5rem;
     box-shadow: 0px 4px 4px rgba(138, 137, 137, .4);
-   input{
+    input{
        margin-bottom: 1rem;
-   }
+    }
 
-   label{
+    label{
         color: black;
         display: block;
-   }
-
-   .btn-search{
-   
-    background-color: $primary_theme_color;
-    border: solid 2px transparent;
-    color: white;
-    font-weight: 700;
-    &:hover{
-        border: solid 2px $primary_theme_color;
-        background-color: transparent;
-        box-shadow: 0px 4px 6px $primary_theme_color;
-        color: $primary_theme_color;
     }
-   }
-   
 }
 
 .home-section{
@@ -155,21 +111,7 @@
 
     img{
         height: 50%;
-    }
-    .btn-bg-in{
-        border: solid 2px white;
-        background-color: transparent;
-        color: white;
-        font-weight: 700;
-        padding: .5rem 2rem;
-        font-size: 1.7rem;
-        &:hover{
-            border: solid 2px black;
-            color: black;
-            background: lighten($secondary_theme_color, 9);
-        }
-
-    }
+    }    
 }
 
 footer{

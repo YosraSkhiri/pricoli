@@ -5292,32 +5292,56 @@ textarea.form-control {
 
   .offset-xl-11 {
     margin-left: 91.6666666667%; } }
-.navbar-nav .nav-item:not(:last-child) {
-  margin-right: 2.5rem; }
-
-.btn {
+.c-btn, .btn-default, .btn-primary, .btn-secondary, .btn-bg-intro, .btn-nav {
   padding: .5rem 2rem;
-  border-radius: 50px; }
-
-.btn-primary {
-  border: solid 2px #61B6E5;
-  background-color: transparent;
-  color: #61B6E5;
-  font-weight: 700; }
-  .btn-primary:hover {
-    border: solid 2px transparent;
-    background-color: #61B6E5;
-    box-shadow: 0px 4px 6px #61B6E5; }
+  border-radius: 50px;
+  font-weight: 700;
+  border: solid 2px transparent; }
 
 .btn-nav:hover {
   background-color: #FF6780;
   box-shadow: 0px 4px 6px #FF6780;
   color: white; }
 
-.btn-search {
-  border: solid 2px transparent;
+.btn-default {
+  border-color: #61B6E5;
+  color: #61B6E5; }
+  .btn-default:hover {
+    border-color: transparent;
+    background-color: #61B6E5;
+    box-shadow: 0px 4px 6px #61B6E5;
+    color: white; }
+
+.btn-primary {
   background-color: #61B6E5;
   color: white; }
+  .btn-primary:hover {
+    border-color: #61B6E5;
+    background-color: transparent;
+    box-shadow: 0px 4px 6px #61B6E5;
+    color: #61B6E5; }
+
+.btn-secondary {
+  background-color: #FF6780;
+  color: white; }
+  .btn-secondary:hover {
+    border-color: #FF6780;
+    background-color: transparent;
+    box-shadow: 0px 4px 6px #FF6780;
+    color: #FF6780; }
+
+.btn-bg-intro {
+  border-color: white;
+  color: white;
+  padding: .5rem 2rem;
+  font-size: 1.7rem; }
+  .btn-bg-intro:hover {
+    border-color: black;
+    color: black;
+    background: #ff95a6; }
+
+.navbar-nav .nav-item:not(:last-child) {
+  margin-right: 2.5rem; }
 
 .form-control {
   border-radius: 50px;
@@ -5376,16 +5400,6 @@ textarea.form-control {
   .hero-form label {
     color: black;
     display: block; }
-  .hero-form .btn-search {
-    background-color: #61B6E5;
-    border: solid 2px transparent;
-    color: white;
-    font-weight: 700; }
-    .hero-form .btn-search:hover {
-      border: solid 2px #61B6E5;
-      background-color: transparent;
-      box-shadow: 0px 4px 6px #61B6E5;
-      color: #61B6E5; }
 
 .home-section {
   width: 100%;
@@ -5411,17 +5425,6 @@ textarea.form-control {
     background: #FF6780; }
   .home-section img {
     height: 50%; }
-  .home-section .btn-bg-in {
-    border: solid 2px white;
-    background-color: transparent;
-    color: white;
-    font-weight: 700;
-    padding: .5rem 2rem;
-    font-size: 1.7rem; }
-    .home-section .btn-bg-in:hover {
-      border: solid 2px black;
-      color: black;
-      background: #ff95a6; }
 
 footer {
   width: 100%;
