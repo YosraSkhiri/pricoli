@@ -5408,11 +5408,17 @@ textarea.form-control {
   width: 100%;
   height: 100vh;
   position: relative; }
+  @media only screen and (max-width: 768px) {
+    .home-section {
+      flex-direction: column; } }
   .home-section .part-1 {
     margin-left: 6.5rem;
     margin-top: 5rem; }
   .home-section .part-1 > p.black-style {
     font-size: 2.2rem; }
+    @media only screen and (max-width: 768px) {
+      .home-section .part-1 > p.black-style {
+        font-size: 2rem; } }
   .home-section p.para-2 {
     margin-top: 5rem; }
   .home-section::before {
@@ -5423,8 +5429,14 @@ textarea.form-control {
     height: 100%;
     width: 36%;
     background: #FF6780; }
+    @media only screen and (max-width: 768px) {
+      .home-section::before {
+        width: 100%; } }
   .home-section img {
     height: 50%; }
+    @media only screen and (max-width: 768px) {
+      .home-section img {
+        display: none; } }
 
 footer {
   width: 100%;
@@ -5432,29 +5444,55 @@ footer {
   background: #61B6E5;
   justify-content: center;
   color: white;
-  position: relative; }
+  /*&::before{
+      content: '';
+      background-image: url(../img/kids.png);
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      left: 50%;
+      bottom: 50%;
+      position: absolute;
+  }*/ }
+  @media only screen and (max-width: 768px) {
+    footer {
+      flex-direction: column; } }
   footer .footer-logo {
     width: 70%; }
+    @media only screen and (max-width: 768px) {
+      footer .footer-logo {
+        width: 50%; } }
   footer > div {
     margin-top: 5rem; }
-  footer::before {
-    content: '';
-    background-image: url(../img/kids.png);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    left: 50%;
-    bottom: 50%;
-    position: absolute; }
+    @media only screen and (max-width: 768px) {
+      footer > div {
+        margin-top: 1rem; } }
   footer ul {
     list-style: none; }
+    @media only screen and (max-width: 768px) {
+      footer ul {
+        width: 60%; } }
   footer textarea.form-control {
     border-radius: 10px; }
   footer .social-media > li {
     margin-right: 2rem; }
   footer .social-media-part {
     margin-top: 9.5rem; }
+    @media only screen and (max-width: 768px) {
+      footer .social-media-part {
+        margin-top: 0rem; } }
   footer h1 {
     margin-bottom: 2rem; }
+    @media only screen and (max-width: 768px) {
+      footer h1 {
+        font-size: 1.7rem;
+        margin-bottom: 1.5rem; } }
+
+@media only screen and (max-width: 768px) {
+  :root {
+    font-size: 13px; } }
+@media only screen and (max-width: 360px) {
+  :root {
+    font-size: 9px; } }
 
 /*# sourceMappingURL=main.css.map */
