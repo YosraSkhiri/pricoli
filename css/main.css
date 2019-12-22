@@ -5486,6 +5486,8 @@ footer {
     border-radius: 10px; }
   footer .social-media > li {
     margin-right: 2rem; }
+  footer svg:hover > .svg-fill {
+    fill: #FF6780; }
   footer .social-media-part {
     margin-top: 9.5rem; }
     @media only screen and (max-width: 768px) {

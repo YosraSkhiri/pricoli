@@ -190,6 +190,10 @@ footer{
     .social-media > li{
         margin-right: 2rem;
     }
+
+    svg:hover > .svg-fill {
+        fill: $secondary_theme_color;
+    }
     .social-media-part{
         margin-top: 9.5rem;
         @media only screen and (max-width: 768px) {
