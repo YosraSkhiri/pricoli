@@ -5502,15 +5502,26 @@ footer {
     width: 70%; }
     @media only screen and (max-width: 768px) {
       footer .footer-logo {
-        width: 50%; } }
+        width: 70%; } }
   footer .part-1 {
     margin-right: 2rem;
     margin-left: 4rem;
     width: 50%; }
+    @media only screen and (max-width: 768px) {
+      footer .part-1 {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 3rem;
+        margin-top: 3rem; } }
   footer .part-2 {
     margin-right: 4rem;
     margin-left: 2rem;
     width: 50%; }
+    @media only screen and (max-width: 768px) {
+      footer .part-2 {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 3rem; } }
   footer > div {
     margin-top: 5rem;
     margin-bottom: 3rem; }
