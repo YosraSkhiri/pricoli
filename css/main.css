@@ -5497,6 +5497,11 @@ footer {
       footer h1 {
         font-size: 1.7rem;
         margin-bottom: 1.5rem; } }
+  footer .btn-secondary:hover {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    box-shadow: none; }
 
 @media only screen and (max-width: 768px) {
   :root {
