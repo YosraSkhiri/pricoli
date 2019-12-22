@@ -3,6 +3,23 @@
     margin-right: 2.5rem;
 }
 
+@each $i, $color in $logo-colors {
+
+    @if $i == 1{
+        .path-#{$i}{
+            fill: #0f0;
+        }
+    }
+    @if $i != 7 {
+        .path-#{$i+1}{
+            fill: $color;
+        }
+    }
+    .navbar-brand:hover .path-#{$i}{
+        fill: $color;
+    }
+}
+
 .form-control{
     border-radius: 50px;
     border: 1px solid rgb(182, 182, 182);

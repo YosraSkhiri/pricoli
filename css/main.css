@@ -5343,6 +5343,48 @@ textarea.form-control {
 .navbar-nav .nav-item:not(:last-child) {
   margin-right: 2.5rem; }
 
+.path-1 {
+  fill: #0f0; }
+
+.path-2 {
+  fill: #61b6e5; }
+
+.navbar-brand:hover .path-1 {
+  fill: #61b6e5; }
+
+.path-3 {
+  fill: #61b6e5; }
+
+.navbar-brand:hover .path-2 {
+  fill: #61b6e5; }
+
+.path-4 {
+  fill: #a95094; }
+
+.navbar-brand:hover .path-3 {
+  fill: #a95094; }
+
+.path-5 {
+  fill: #ff6780; }
+
+.navbar-brand:hover .path-4 {
+  fill: #ff6780; }
+
+.path-6 {
+  fill: #ff7900; }
+
+.navbar-brand:hover .path-5 {
+  fill: #ff7900; }
+
+.path-7 {
+  fill: #ff0; }
+
+.navbar-brand:hover .path-6 {
+  fill: #ff0; }
+
+.navbar-brand:hover .path-7 {
+  fill: #0f0; }
+
 .form-control {
   border-radius: 50px;
   border: 1px solid #b6b6b6; }
