@@ -1,3 +1,6 @@
+body{
+    overflow-x: hidden;
+}
 //this is made to space the nav links exapt the last link
 .navbar-nav .nav-item:not(:last-child){
     margin-right: 2.5rem;
@@ -15,8 +18,9 @@
             fill: $color;
         }
     }
+
     .navbar-brand:hover .path-#{$i}{
-        fill: $color;
+        fill: $color;      
     }
 }
 
@@ -26,13 +30,14 @@
 }
 
 .hero-section{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-image: url(../img/hero_img.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
+    display: flex;
 
     &::before{
         content: '';
@@ -43,30 +48,41 @@
         z-index: 2;
     } 
     .hero-content{
-        position: relative;
-        z-index: 5;
-        top: 45%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin: 0 2rem;
+        margin: auto;
         h1{
             color: white;
             font-size: 5.6rem;
+            position: relative;
+            z-index: 1;
+            
             &::after{
                 content: '';
-                position: relative;
+                position: absolute;
                 z-index: -1;
-                top: -9rem;
+                top: .7em;
                 display: block;
                 width: 23rem;
                 height: 1.5rem;
                 background-color: $primary_theme_color; 
+            
+
+                @media only screen and (max-width: 320px), (max-width: 548px) {
+                    width: 4em;
+                    height: .8rem;
+                }
+            }
+
+            @media only screen and (max-width: 548px) {
+                font-size: 3rem;
+            }
+
+            @media only screen and (max-width: 320px) {
+                font-size: 2.5rem;
             }
         }
     
         p{
             color: white;
-            margin-top: -2.5rem;
             font-weight: lighter;
             letter-spacing: 1px;
             font-size: 1.3rem;
@@ -75,7 +91,7 @@
     
     
     .hero-form{
-        padding: .7rem 1rem ;
+        padding: .7em 1em ;
         background: white;
         border-radius: 15px;
         margin-top: 2.5rem;
@@ -107,10 +123,21 @@
         padding-top: 5rem;
     }
 
+    @media only screen and (max-width: 320px), (max-width: 548px) {
+        .part-1{
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-left: 0rem;
+            padding: 1rem;
+        }
+    }
+
     .part-1 > p.black-style{
         font-size: 2.2rem;
-        @media only screen and (max-width: 768px) {
-            font-size: 2rem;
+        @media only screen and (max-width: 320px), (max-width: 548px) {
+            font-size: 1.1rem;
         }
     }
 
@@ -231,8 +258,10 @@ footer{
 
     h1{
         margin-bottom: 2rem;
+        @media only screen and (max-width: 320px), (max-width: 548px) {
+            font-size: 1.5rem;
+        }
         @media only screen and (max-width: 768px) {
-            font-size: 1.7rem;
             margin-bottom: 1.5rem;
         }
     }
@@ -242,17 +271,5 @@ footer{
         color: white;
         border-color: white;
         box-shadow: none;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    :root{
-        font-size: 13px;
-    }
-}
-
-@media only screen and (max-width: 360px) {
-    :root{
-        font-size: 9px;
     }
 }

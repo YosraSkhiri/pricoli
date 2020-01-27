@@ -5340,6 +5340,9 @@ textarea.form-control {
     color: black;
     background: #ff95a6; }
 
+body {
+  overflow-x: hidden; }
+
 .navbar-nav .nav-item:not(:last-child) {
   margin-right: 2.5rem; }
 
@@ -5390,13 +5393,14 @@ textarea.form-control {
   border: 1px solid #b6b6b6; }
 
 .hero-section {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-image: url(../img/hero_img.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  display: flex; }
   .hero-section::before {
     content: '';
     width: 100%;
@@ -5405,32 +5409,38 @@ textarea.form-control {
     position: absolute;
     z-index: 2; }
   .hero-section .hero-content {
-    position: relative;
-    z-index: 5;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0 2rem; }
+    margin: auto; }
     .hero-section .hero-content h1 {
       color: white;
-      font-size: 5.6rem; }
+      font-size: 5.6rem;
+      position: relative;
+      z-index: 1; }
       .hero-section .hero-content h1::after {
         content: '';
-        position: relative;
+        position: absolute;
         z-index: -1;
-        top: -9rem;
+        top: .7em;
         display: block;
         width: 23rem;
         height: 1.5rem;
         background-color: #61B6E5; }
+        @media only screen and (max-width: 320px), (max-width: 548px) {
+          .hero-section .hero-content h1::after {
+            width: 4em;
+            height: .8rem; } }
+      @media only screen and (max-width: 548px) {
+        .hero-section .hero-content h1 {
+          font-size: 3rem; } }
+      @media only screen and (max-width: 320px) {
+        .hero-section .hero-content h1 {
+          font-size: 2.5rem; } }
     .hero-section .hero-content p {
       color: white;
-      margin-top: -2.5rem;
       font-weight: lighter;
       letter-spacing: 1px;
       font-size: 1.3rem; }
   .hero-section .hero-form {
-    padding: 0.7rem 1rem;
+    padding: 0.7em 1em;
     background: white;
     border-radius: 15px;
     margin-top: 2.5rem;
@@ -5453,11 +5463,19 @@ textarea.form-control {
   .home-section .part-1 {
     margin-left: 6.5rem;
     padding-top: 5rem; }
+  @media only screen and (max-width: 320px), (max-width: 548px) {
+    .home-section .part-1 {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin-left: 0rem;
+      padding: 1rem; } }
   .home-section .part-1 > p.black-style {
     font-size: 2.2rem; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 320px), (max-width: 548px) {
       .home-section .part-1 > p.black-style {
-        font-size: 2rem; } }
+        font-size: 1.1rem; } }
   .home-section p.para-2 {
     margin-top: 5rem; }
   .home-section::before {
@@ -5548,21 +5566,16 @@ footer {
         margin-top: 0rem; } }
   footer h1 {
     margin-bottom: 2rem; }
+    @media only screen and (max-width: 320px), (max-width: 548px) {
+      footer h1 {
+        font-size: 1.5rem; } }
     @media only screen and (max-width: 768px) {
       footer h1 {
-        font-size: 1.7rem;
         margin-bottom: 1.5rem; } }
   footer .btn-secondary:hover {
     background-color: transparent;
     color: white;
     border-color: white;
     box-shadow: none; }
-
-@media only screen and (max-width: 768px) {
-  :root {
-    font-size: 13px; } }
-@media only screen and (max-width: 360px) {
-  :root {
-    font-size: 9px; } }
 
 /*# sourceMappingURL=main.css.map */
