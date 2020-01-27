@@ -273,3 +273,37 @@ footer{
         box-shadow: none;
     }
 }
+
+
+.signin-img-container{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    @media only screen and (max-width: 786px) {
+        display: none;
+    }
+}
+
+.signin-form{
+    margin-bottom: 2rem;
+}
+
+.signin-img{
+    width: auto;
+    height: 100vh; 
+}
+
+.form-title{
+    margin-bottom: 2rem;
+}
+
+.form-title::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: .7em;
+    display: block;
+    width: 8rem;
+    height: .9rem;
+    background-color: $primary_theme_color; 
+}
