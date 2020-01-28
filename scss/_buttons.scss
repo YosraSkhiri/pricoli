@@ -51,3 +51,7 @@ $color-theme: (primary: #61B6E5, secondary: #FF6780);
         background: lighten($secondary_theme_color, 9);
     }
 }
+
+.btn-nav:hover{
+    font-size: 50px;
+}

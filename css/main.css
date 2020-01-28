@@ -5606,4 +5606,45 @@ footer {
   height: .9rem;
   background-color: #61B6E5; }
 
+.card {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #D9D9D9;
+  border-radius: 15px;
+  background-color: white;
+  padding: 1rem 2rem; }
+
+.card-img-top {
+  width: 100%;
+  height: auto; }
+
+.card-body > span {
+  background-color: #00D824;
+  border-radius: 50px;
+  font-size: .8rem;
+  color: white;
+  font-weight: bold;
+  padding: .1rem .6rem;
+  margin-right: .3rem; }
+
+.card-actions {
+  display: flex;
+  justify-content: space-between; }
+
+.card-btn-plus {
+  font-weight: bold;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #FF6780;
+  border: 2px solid #FF6780;
+  border-radius: 50px; }
+
+.card-btn-plus:hover {
+  color: white;
+  background-color: #FF6780; }
+
+.card-rating .rate {
+  font-size: 1.3rem;
+  margin-bottom: -.5rem; }
+
 /*# sourceMappingURL=main.css.map */

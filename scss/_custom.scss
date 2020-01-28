@@ -307,3 +307,47 @@ footer{
     height: .9rem;
     background-color: $primary_theme_color; 
 }
+
+.card{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #D9D9D9 ;
+    border-radius: 15px;
+    background-color: white;
+    padding: 1rem 2rem;
+}
+
+.card-img-top{
+    width: 100%;
+    height: auto;
+}
+
+.card-body > span{
+    background-color: #00D824;
+    border-radius: 50px;
+    font-size: .8rem;
+    color: white;
+    font-weight: bold;
+    padding: .1rem .6rem;
+    margin-right: .3rem;
+}
+
+.card-actions{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-btn-plus{
+    font-weight: bold;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: $secondary_theme_color;
+    border: 2px solid $secondary_theme_color;
+    border-radius: 50px;
+}
+
+.card-btn-plus:hover{
+    color: white;
+    background-color: $secondary_theme_color;
+}
+
